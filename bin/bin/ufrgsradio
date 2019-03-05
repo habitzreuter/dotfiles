@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+#
+# Play $URL radio in mvp
+# Based on https://git.sr.ht/~sircmpwn/dotfiles/tree/master/bin/stewdio
+#
+set -euo pipefail
+
+URL=http://radioaovivo.ufrgs.br:8000/stream.mp3
+
+if [ "$1" == "play" ]
+then
+    if [ -e "$XDG_RUNTIME_DIR/radio.fifo" ]
+	then
+        echo quit > "$XDG_RUNTIME_DIR/radio.fifo"
+        rm "$XDG_RUNTIME_DIR/radio.fifo"
+    else
+        mkfifo "$XDG_RUNTIME_DIR/radio.fifo"
+        mpv --input-file="$XDG_RUNTIME_DIR/radio.fifo" --no-audio-display --quiet \
+            $URL > /dev/null < /dev/null &
+    fi
+fi
