@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+set -euo pipefail
+
+BG="/usr/share/backgrounds/f29/default/normalish/f29.png"
+
+echo $BG

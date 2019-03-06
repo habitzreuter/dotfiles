@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+set -euo pipefail
+
+while true
+do
+	slurm_jobs=$(cat ~/.slurm_active_jobs)
+	time=$(date +"%A %d %B %H:%M")
+	batstatus=$(cat /sys/class/power_supply/BAT0/status)
+
+	if [ "$batstatus" = "Discharging" ]
+	then
+		echo "${slurm_jobs} Slurm Jobs | ${time} | $(batpct)"
+	else
+		echo "${slurm_jobs} Slurm Jobs | ${time}"
+	fi
+	sleep 10
+done

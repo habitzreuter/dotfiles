@@ -1,0 +1,34 @@
+#!/bin/sh
+# Modified from https://gitlab.manjaro.org/packages/community/i3/i3exit/blob/master/i3exit
+
+BG=$(wallpaper)
+
+case "$1" in
+    lock)
+        swaylock -i $BG --scaling fill
+        ;;
+    logout)
+	swaymsg exit
+        ;;
+    #switch_user)
+    #    dm-tool switch-to-greeter
+    #    ;;
+    suspend)
+        swaylock -i $BG --scaling fill & systemctl suspend
+        ;;
+    hibernate)
+        swaylock -i $BG --scaling fill & systemctl hibernate
+        ;;
+    reboot)
+        systemctl reboot
+        ;;
+    shutdown)
+        systemctl poweroff
+        ;;
+    *)
+        echo "== ! swayexit: missing or invalid argument ! =="
+        echo "Try again with: lock | logout | suspend | hibernate | reboot | shutdown"
+        exit 2
+esac
+
+exit 0
