@@ -1,0 +1,33 @@
+# General options
+set header_cache = "~/.cache/mutt"
+set imap_check_subscribed
+set imap_keepalive = 300
+set mail_check = 60
+set mbox_type = Maildir
+set postponed = "+Draft"
+set record = "+Sent"
+set move = no
+set editor = "vim"
+set mark_old = no
+set send_charset="utf-8"
+
+# View HTML emails
+set mailcap_path = ~/.mutt/mailcap
+auto_view text/html
+
+# Allow caching
+set message_cachedir = ~/.cache/mutt/messages
+
+# Allow fast reply
+set fast_reply = yes
+set include = yes
+
+# Configure account switch
+macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/yahoo<enter><change-folder>!<enter>'
+macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/ufrgs<enter><change-folder>!<enter>'
+
+source "~/.mutt/ufrgs"
+folder-hook $folder 'source ~/.mutt/ufrgs'
+
+source "~/.mutt/yahoo"
+folder-hook $folder 'source ~/.mutt/yahoo'

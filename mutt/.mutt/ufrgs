@@ -1,0 +1,21 @@
+set my_pass_ufrgs="`pass ufrgs/aluno | head -n 1`"
+set my_loginnumber="`pass ufrgs/aluno | grep 'login' | sed -e 's/login: //g'`"
+
+## Receive options.
+set imap_user = $my_loginnumber
+set imap_pass = $my_pass_ufrgs
+set folder = imaps://$imap_user@imap.ufrgs.br/
+set spoolfile = +INBOX
+set postponed = +Drafts
+set record = +Sent
+
+## Send options.
+set smtp_url = smtps://$imap_user@smtp.ufrgs.br
+set smtp_pass = $my_pass_ufrgs
+set realname = "Marco Antônio Habitzreuter"
+set from = "marco.habitzreuter@ufrgs.br"
+set hostname = "ufrgs.br"
+set signature = "Marco Antônio Habitzreuter"
+
+## Hook
+account-hook $folder 'set imap_user=$imap_user@imap.ufrgs.br imap_pass=$my_pass_ufrgs'
