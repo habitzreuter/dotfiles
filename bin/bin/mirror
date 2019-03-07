@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+#
+# Create offline snapshot of a website
+#
+set -euo pipefail
+
+wget --mirror --convert-links --adjust-extension --page-requisites --no-parent \
+	--continue "$1"
