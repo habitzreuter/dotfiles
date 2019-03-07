@@ -6,6 +6,9 @@ c.downloads.location.directory = '~/tmp/'
 config.bind("xjt", "set content.javascript.enabled true")
 config.bind("xjf", "set content.javascript.enabled false")
 
+# qute-pass shortcuts
+config.bind('<z><l>', 'spawn --userscript qute-pass -d dmenu')
+
 c.content.javascript.enabled = False
 c.content.cookies.accept = 'no-3rdparty'
 whitelist = [
