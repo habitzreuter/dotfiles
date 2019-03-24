@@ -6,9 +6,9 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term urxvt256c-ml -ls
+set $term urxvt -ls
 # Your preferred application launcher
-set $menu dmenu_run
+set $menu dmenu_path | dmenu | xargs swaymsg exec
 
 # Default wallpaper
 output * bg `wallpaper` fill
