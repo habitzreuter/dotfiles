@@ -36,9 +36,6 @@ output * bg `wallpaper` fill
     # exit sway (logs you out of your wayland session)
     bindsym $mod+Shift+e exit
 
-    # screenshot
-    bindsym Print exec swaygrab ~/sync/pics/$(date +"%Y-%m-%d_%H:%M:%S.png")
-
 # Moving around:
     # Move your focus around
     bindsym $mod+$left focus left
