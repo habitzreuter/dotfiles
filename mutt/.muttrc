@@ -31,3 +31,6 @@ folder-hook $folder 'source ~/.mutt/ufrgs'
 
 source "~/.mutt/yahoo"
 folder-hook $folder 'source ~/.mutt/yahoo'
+
+# Patch syntax highlighting
+color	normal	white	default
