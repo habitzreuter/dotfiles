@@ -5,4 +5,4 @@
 set -euo pipefail
 
 wget --mirror --convert-links --adjust-extension --page-requisites --no-parent \
-	--continue "$@"
+	--continue --timeout 120 "$@"
