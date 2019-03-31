@@ -3,4 +3,6 @@
 
 alias ls='ls --color=auto'
 
+HISTCONTROL=ignoreboth
+
 PS1='[\u@\h \W]\$ '
