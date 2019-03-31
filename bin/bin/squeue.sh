@@ -3,12 +3,12 @@
 # Check how many batch jobs I have running in the slurm cluster
 #
 
-set -euo pipefail
+set -uo pipefail
 
 # Check if connection is ok
 timeout 10s ssh -q cluster exit
-if [ $? -eq 124 ]; then
-	echo "timeout"
+if [ $? -ne 0 ]; then
+	echo "?"
 	exit
 fi
 
