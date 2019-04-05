@@ -148,7 +148,7 @@ set $blue #285577
 set $gray #333333
 set $red #900000
 bar {
-    status_command custom_statusbar
+    status_command i3status
     colors {
         background $gray
         inactive_workspace $gray $gray #888888
