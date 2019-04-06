@@ -10,9 +10,6 @@ case "$1" in
     logout)
 	swaymsg exit
         ;;
-    #switch_user)
-    #    dm-tool switch-to-greeter
-    #    ;;
     suspend)
         swaylock -i $BG --scaling fill & systemctl suspend
         ;;
