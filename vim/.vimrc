@@ -9,6 +9,8 @@ set incsearch			" incremental search
 set backspace=indent,eol,start	" make backspace work as expected
 set colorcolumn=81
 set nowrap
+set number
+set relativenumber
 
 " UltiSnips trigger configuration
 let g:UltiSnipsExpandTrigger="<tab>"
