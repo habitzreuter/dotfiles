@@ -1,0 +1,44 @@
+[general]
+# List of accounts to be synced, separated by a comma.
+accounts = yahoo, ufrgs
+pythonfile = ~/.offlineimap.py
+
+[Account yahoo]
+localrepository = yahoo-local
+remoterepository = yahoo-remote
+
+[Repository yahoo-local]
+type = Maildir
+localfolders = ~/.mail_yahoo
+
+[Repository yahoo-remote]
+type = IMAP
+remotehost = imap.mail.yahoo.com
+remoteuser = habitzreuter
+remotepasseval = get_pass("yahoo.com/habitzreuter")
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+ssl_version = tls1_2
+
+[Account ufrgs]
+localrepository = ufrgs-local
+remoterepository = ufrgs-remote
+
+[Repository ufrgs-local]
+type = Maildir
+localfolders = ~/.mail_ufrgs
+
+[Repository ufrgs-remote]
+type = IMAP
+remotehost = imap.ufrgs.br
+remoteuser = 00275612
+remotepasseval = get_pass("ufrgs/aluno")
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+ssl_version = tls1_2
+
+[mbnames]
+enabled = yes
+filename = ~/.mailboxes
+header = "mailboxes "
+peritem = "+%(accountname)s/%(foldername)s"
+sep = " "
+footer = "\n"

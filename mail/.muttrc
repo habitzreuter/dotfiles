@@ -22,15 +22,11 @@ set message_cachedir = ~/.cache/mutt/messages
 set fast_reply = yes
 set include = yes
 
+source ~/.mutt/ufrgs
+
 # Configure account switch
-macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/yahoo<enter><change-folder>!<enter>'
-macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/ufrgs<enter><change-folder>!<enter>'
-
-source "~/.mutt/ufrgs"
-folder-hook $folder 'source ~/.mutt/ufrgs'
-
-source "~/.mutt/yahoo"
-folder-hook $folder 'source ~/.mutt/yahoo'
+macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/ufrgs<enter><change-folder>!<enter>'
+macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/yahoo<enter><change-folder>!<enter>'
 
 # Contacts
 set query_command= "khard email --parsable %s"

@@ -1,0 +1,4 @@
+set folder = "~/.mail_ufrgs"
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set postponed = "+Drafts"

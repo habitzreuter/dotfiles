@@ -1,0 +1,4 @@
+set folder = "~/.mail_yahoo"
+set spoolfile = "+Inbox"
+set record = "+Sent"
+set postponed = "+Drafts"
