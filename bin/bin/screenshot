@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+set -euo pipefail
+
+DIR=~/Pictures/screenshots
+DATE=$(date +'%Y-%m-%d-%H%M%S')
+
+if [ ! -d "$DIR" ]; then
+	mkdir -p $DIR
+fi
+
+grim "$DIR/$DATE.png"
