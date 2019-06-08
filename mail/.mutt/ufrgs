@@ -1,4 +1,5 @@
 set folder = "~/.mail_ufrgs"
+set sendmail="/usr/bin/msmtp -a ufrgs"
 set spoolfile = "+INBOX"
 set record = "+Sent"
 set postponed = "+Drafts"
