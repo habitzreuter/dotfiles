@@ -4,8 +4,20 @@ set -euo pipefail
 DIR=~/Pictures/screenshots
 DATE=$(date +'%Y-%m-%d-%H%M%S')
 
+region=
+
+while getopts ':r' flag; do
+	case "${flag}" in
+		r) region='true' ;;
+	esac
+done
+
 if [ ! -d "$DIR" ]; then
 	mkdir -p $DIR
 fi
 
-grim "$DIR/$DATE.png"
+if [ ! -z "$region" ]; then
+	grim -g "$(slurp)" "$DIR/$DATE.png"
+else
+	grim "$DIR/$DATE.png"
+fi
