@@ -23,6 +23,9 @@ output * bg `wallpaper` fill
     # start your launcher
     bindsym $mod+d exec $menu
 
+    # passwords
+    bindsym $mod+p exec passmenu
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
