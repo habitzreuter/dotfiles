@@ -1,6 +1,7 @@
 # qutebrowser config file based on
 # https://git.sr.ht/~sircmpwn/dotfiles/tree/master/.config/qutebrowser/config.py
 
+c.spellcheck.languages = ["en-US", "pt-BR", "de-DE"]
 c.downloads.location.directory = '~/tmp/'
 
 config.bind("xjt", "set content.javascript.enabled true")
