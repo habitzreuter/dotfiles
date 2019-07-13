@@ -17,7 +17,8 @@ archive.lock()
 for key, msg in box.iteritems():
     try:
         date = parser.parse(msg['date']).replace(tzinfo=None)
-        if (date < limit):
+        flags = msg.get_flags()
+        if ((date < limit) and ('F' not in flags)):
             print('Moving', key)
             archive.add(msg)
             box.remove(key)
