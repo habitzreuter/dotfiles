@@ -2,7 +2,7 @@
 # https://git.sr.ht/~sircmpwn/dotfiles/tree/master/.config/qutebrowser/config.py
 
 c.spellcheck.languages = ["en-US", "pt-BR", "de-DE"]
-c.downloads.location.directory = '~/tmp/'
+c.downloads.location.directory = '~/Downloads/'
 
 config.bind("xjt", "set content.javascript.enabled true")
 config.bind("xjf", "set content.javascript.enabled false")
