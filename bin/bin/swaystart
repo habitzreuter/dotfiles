@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-set -euo pipefail
-
-export XKB_DEFAULT_LAYOUT=br
-export XKB_DEFAULT_MODEL=default
-exec sway

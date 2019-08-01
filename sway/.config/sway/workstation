@@ -1,0 +1,4 @@
+input "10142:590:2.4G_wireless_USB_Device_2.4G_wireless_USB_Device" {
+	xkb_layout br
+	xkb_numlock enabled
+}
