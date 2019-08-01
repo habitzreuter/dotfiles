@@ -1,0 +1,9 @@
+[Unit]
+Description=File Sync Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/unison box -batch
+
+[Install]
+WantedBy=network.target

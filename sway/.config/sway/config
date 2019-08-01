@@ -171,4 +171,3 @@ default_border pixel 3
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
 include ~/.config/sway/`hostname`
-exec --no-startup-id mako

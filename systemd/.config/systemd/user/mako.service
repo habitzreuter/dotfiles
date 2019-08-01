@@ -1,0 +1,10 @@
+[Unit]
+Description=Notification service
+Documentation=man:mako(1)
+
+[Service]
+ExecStart=/usr/bin/mako
+Restart=always
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=File Sync Query Timer
+
+[Timer]
+OnBootSec=1m
+OnUnitInactiveSec=15m
+
+[Install]
+WantedBy=timers.target

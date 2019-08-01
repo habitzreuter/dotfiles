@@ -1,0 +1,9 @@
+[Unit]
+Description=Feed Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/newsboat -X reload
+
+[Install]
+WantedBy=network.target

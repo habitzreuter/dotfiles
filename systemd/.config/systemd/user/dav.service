@@ -1,0 +1,9 @@
+[Unit]
+Description=DAV Sync Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/vdirsyncer sync
+
+[Install]
+WantedBy=network.target
