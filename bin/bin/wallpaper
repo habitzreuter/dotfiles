@@ -1,6 +1,11 @@
-#!/usr/bin/env sh
-set -euo pipefail
+#!/usr/bin/env python3
+# Idea from https://git.sr.ht/~sircmpwn/dotfiles/tree/master/bin/wallpaper
+import glob
+import random
+from os.path import expanduser
 
-BG="/usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png"
+home = expanduser("~")
+images = list()
+images += glob.glob(home + "/Pictures/wallpapers/*")
 
-echo $BG
+print(random.choice(images))
