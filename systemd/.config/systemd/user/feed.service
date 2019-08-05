@@ -3,7 +3,7 @@ Description=Feed Service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/newsboat -X reload
+ExecStart=/usr/bin/newsboat -x reload
 
 [Install]
 WantedBy=network.target
