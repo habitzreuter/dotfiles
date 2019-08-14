@@ -21,3 +21,4 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
 
+colorscheme ron
