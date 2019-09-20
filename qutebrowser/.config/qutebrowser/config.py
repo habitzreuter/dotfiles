@@ -2,13 +2,16 @@
 # https://git.sr.ht/~sircmpwn/dotfiles/tree/master/.config/qutebrowser/config.py
 
 c.spellcheck.languages = ["en-US", "pt-BR", "de-DE"]
-c.downloads.location.directory = '~/Downloads/'
 
 config.bind("xjt", "set content.javascript.enabled true")
 config.bind("xjf", "set content.javascript.enabled false")
 
 # qute-pass shortcuts
 config.bind('<z><l>', 'spawn --userscript qute-pass -d dmenu')
+
+# download settings
+c.downloads.remove_finished = 1
+c.downloads.location.directory = '~/Downloads/'
 
 c.content.javascript.enabled = False
 c.content.cookies.accept = 'no-3rdparty'
