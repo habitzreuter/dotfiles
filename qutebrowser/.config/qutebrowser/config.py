@@ -13,8 +13,9 @@ config.bind('<z><l>', 'spawn --userscript qute-pass -d dmenu')
 c.downloads.remove_finished = 1
 c.downloads.location.directory = '~/Downloads/'
 
-c.content.javascript.enabled = False
 c.content.cookies.accept = 'no-3rdparty'
+
+c.content.javascript.enabled = False
 whitelist = [
     "*://localhost/*",
     "*://127.0.0.1/*",
@@ -26,6 +27,7 @@ whitelist = [
     "*://*.github.com/*",
     "*://ufrgs.br/*",
     "*://*.ufrgs.br/*",
+    "*://*.stackexchange.com/*",
 ]
 for site in whitelist:
     with config.pattern(site) as pat:
