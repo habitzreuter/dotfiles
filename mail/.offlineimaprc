@@ -34,6 +34,9 @@ remoteuser = 00275612
 remotepasseval = get_pass("ufrgs/aluno")
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 ssl_version = tls1_2
+nametrans = lambda foldername: re.sub (' ', '_', foldername.lower())
+createfolders = False
+
 
 [mbnames]
 enabled = yes
