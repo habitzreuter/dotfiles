@@ -16,9 +16,9 @@ fileext = ".vcf"
 
 [storage contacts_remote]
 type = "carddav"
-url = "https://habitzreuter.science/radicale"
-username = "habitzreuter"
-password.fetch = ["command", "pass", "habitzreuter.science/radicale/habitzreuter"]
+url = "https://dav.mailbox.org/caldav/"
+username = "habitzreuter@mailbox.org"
+password.fetch = ["command", "pass", "mailbox.org/habitzreuter"]
 
 # CALDAV
 [pair calendar]
@@ -36,6 +36,6 @@ fileext = ".ics"
 
 [storage calendar_remote]
 type = "caldav"
-url = "https://habitzreuter.science/radicale"
-username = "habitzreuter"
-password.fetch = ["command", "pass", "habitzreuter.science/radicale/habitzreuter"]
+url = "https://dav.mailbox.org/caldav/"
+username = "habitzreuter@mailbox.org"
+password.fetch = ["command", "pass", "mailbox.org/habitzreuter"]
