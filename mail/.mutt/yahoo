@@ -1,6 +1,0 @@
-set folder = "~/.mail_yahoo"
-set sendmail="/usr/bin/msmtp -a yahoo"
-set spoolfile = "+Inbox"
-set record = "+Sent"
-set postponed = "+Draft"
-set from = habitzreuter@yahoo.com

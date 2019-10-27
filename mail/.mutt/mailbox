@@ -1,0 +1,6 @@
+set folder = "~/.mail"
+set sendmail="/usr/bin/msmtp -a mailbox"
+set spoolfile = "+inbox"
+set record = "+sent"
+set postponed = "+draft"
+set from = habitzreuter@mailbox.org

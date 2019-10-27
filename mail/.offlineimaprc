@@ -1,23 +1,25 @@
 [general]
 # List of accounts to be synced, separated by a comma.
-accounts = yahoo, ufrgs
+accounts = mailbox, ufrgs
 pythonfile = ~/.offlineimap.py
 
-[Account yahoo]
-localrepository = yahoo-local
-remoterepository = yahoo-remote
+[Account mailbox]
+localrepository = mailbox-local
+remoterepository = mailbox-remote
 
-[Repository yahoo-local]
+[Repository mailbox-local]
 type = Maildir
-localfolders = ~/.mail_yahoo
+localfolders = ~/.mail
 
-[Repository yahoo-remote]
+[Repository mailbox-remote]
 type = IMAP
-remotehost = imap.mail.yahoo.com
-remoteuser = habitzreuter
-remotepasseval = get_pass("yahoo.com/habitzreuter")
+remotehost = imap.mailbox.org
+remoteuser = habitzreuter@mailbox.org
+remotepasseval = get_pass("mailbox.org/habitzreuter")
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 ssl_version = tls1_2
+nametrans = lambda foldername: re.sub (' ', '_', foldername.lower())
+createfolders = False
 
 [Account ufrgs]
 localrepository = ufrgs-local
