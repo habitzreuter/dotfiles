@@ -24,6 +24,7 @@ whitelist = [
     "*://ufrgs.br/*",
     "*://*.ufrgs.br/*",
     "*://*.stackexchange.com/*",
+    "*://*.latex.codecogs.com/*",
 ]
 for site in whitelist:
     with config.pattern(site) as pat:
