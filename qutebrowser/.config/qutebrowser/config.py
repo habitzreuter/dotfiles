@@ -22,10 +22,15 @@ whitelist = [
     "*://127.0.0.1/*",
     "*://duckduckgo.com/*",
     "*://translate.google.com/*",
+    "*://dictionary.cambridge.org/*",
     "*://ufrgs.br/*",
     "*://*.ufrgs.br/*",
     "*://*.stackexchange.com/*",
     "*://*.latex.codecogs.com/*",
+    "*://app.nubank.com.br/*",
+    "*://invidio.us/*",
+    "*://learngerman.dw.com/*",
+    "*://habitica.com/*",
 ]
 for site in whitelist:
     with config.pattern(site) as pat:
