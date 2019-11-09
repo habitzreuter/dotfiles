@@ -4,8 +4,6 @@ set imap_check_subscribed
 set imap_keepalive = 300
 set mail_check = 60
 set mbox_type = Maildir
-set postponed = "+Draft"
-set record = "+Sent"
 set move = no
 set editor = "vim"
 set mark_old = no
