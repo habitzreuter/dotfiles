@@ -8,6 +8,7 @@ set move = no
 set editor = "vim"
 set mark_old = no
 set send_charset="utf-8"
+set sort = threads
 
 # View HTML emails
 set mailcap_path = ~/.mutt/mailcap
