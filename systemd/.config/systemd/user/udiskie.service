@@ -1,0 +1,10 @@
+[Unit]
+Description=DIsk mount service
+Documentation=man:udiskie(1)
+
+[Service]
+ExecStart=/usr/bin/udiskie
+Restart=always
+
+[Install]
+WantedBy=default.target
