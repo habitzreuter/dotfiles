@@ -17,7 +17,6 @@ remotehost = imap.mailbox.org
 remoteuser = habitzreuter@mailbox.org
 remotepasseval = get_pass("mailbox.org/habitzreuter")
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
-ssl_version = tls1_2
 nametrans = lambda foldername: re.sub (' ', '_', foldername.lower())
 createfolders = False
 
@@ -35,7 +34,6 @@ remotehost = imap.ufrgs.br
 remoteuser = 00275612
 remotepasseval = get_pass("ufrgs/aluno")
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
-ssl_version = tls1_2
 nametrans = lambda foldername: re.sub (' ', '_', foldername.lower())
 createfolders = False
 
