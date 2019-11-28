@@ -3,7 +3,7 @@ root = ssh://habitzreuter@lief.if.ufrgs.br///home/habitzreuter/
 servercmd = /home/habitzreuter/.local/bin/unison
 
 path = ufrgs
-path = research
+path = docs
 
 times = true
 log = false
