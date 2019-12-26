@@ -14,6 +14,7 @@ c.downloads.remove_finished = 1
 c.downloads.location.directory = '~/Downloads/'
 
 c.content.cookies.accept = 'no-3rdparty'
+c.content.cookies.store = False
 
 c.content.javascript.enabled = False
 whitelist = [
