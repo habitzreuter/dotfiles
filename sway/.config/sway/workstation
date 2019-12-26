@@ -1,4 +1,4 @@
-input "10142:590:2.4G_wireless_USB_Device_2.4G_wireless_USB_Device" {
+input "1118:2040:Microsoft_Wired_Keyboard_600" {
 	xkb_layout br
 	xkb_numlock enabled
 }
