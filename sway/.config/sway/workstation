@@ -2,3 +2,5 @@ input "1118:2040:Microsoft_Wired_Keyboard_600" {
 	xkb_layout br
 	xkb_numlock enabled
 }
+
+bindsym XF86Calculator exec speedcrunch
