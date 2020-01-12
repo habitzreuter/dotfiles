@@ -1,5 +1,5 @@
 [Unit]
-Description=DIsk mount service
+Description=Disk mount service
 Documentation=man:udiskie(1)
 
 [Service]
