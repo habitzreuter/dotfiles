@@ -2,6 +2,6 @@
 #
 # Search files with fzf and open them using rifle (ranger dependency)
 
-file=$HOME/$(fd --follow | fzf)
+file=$HOME/$(fd --follow --type file | fzf)
 
-rifle $file
+rifle "$file"
