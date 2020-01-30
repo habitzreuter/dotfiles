@@ -37,7 +37,7 @@ output * bg `wallpaper` fill
     bindsym $mod+Shift+c reload
 
     # Start file manager
-    bindsym $mod+Shift+e exec $term -e ranger
+    bindsym $mod+Shift+e exec $term -e fzopen
 
 # Moving around:
     # Move your focus around

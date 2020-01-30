@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Search files with fzf and open them using rifle (ranger dependency)
+
+file=$HOME/$(fd --follow | fzf)
+
+rifle $file
