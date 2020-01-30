@@ -9,3 +9,8 @@ function fish_prompt
     printf '%s' (prompt_pwd)
     printf ' > '
 end
+
+# Enable fzf keybindings
+function fish_user_key_bindings
+	fzf_key_bindings
+end
