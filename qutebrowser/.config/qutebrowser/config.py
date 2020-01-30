@@ -1,6 +1,8 @@
 # qutebrowser config file based on
 # https://git.sr.ht/~sircmpwn/dotfiles/tree/master/.config/qutebrowser/config.py
 
+import os
+
 c.spellcheck.languages = ["en-US", "pt-BR", "de-DE"]
 
 config.bind("xjt", "set content.javascript.enabled true")
@@ -23,15 +25,14 @@ whitelist = [
     "*://duckduckgo.com/*",
     "*://translate.google.com/*",
     "*://dictionary.cambridge.org/*",
-    "*://ufrgs.br/*",
-    "*://*.ufrgs.br/*",
-    "*://*.stackexchange.com/*",
     "*://*.latex.codecogs.com/*",
-    "*://app.nubank.com.br/*",
-    "*://invidio.us/*",
-    "*://learngerman.dw.com/*",
-    "*://habitica.com/*",
 ]
+
+js_whitelist = os.path.expanduser("~/.config/qutebrowser/js_whitelist")
+if os.path.exists(js_whitelist):
+    with open(js_whitelist) as f:
+        whitelist += filter(lambda l: bool(l), f.read().split("\n"))
+
 for site in whitelist:
     with config.pattern(site) as pat:
         pat.content.javascript.enabled = True
