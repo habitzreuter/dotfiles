@@ -8,8 +8,9 @@ c.spellcheck.languages = ["en-US", "pt-BR", "de-DE"]
 config.bind("xjt", "set content.javascript.enabled true")
 config.bind("xjf", "set content.javascript.enabled false")
 
-# qute-pass shortcuts
+# userscripts shortcuts
 config.bind('<z><l>', 'spawn --userscript qute-pass -d dmenu')
+config.bind('<z><b>', 'spawn --userscript getbib')
 
 # download settings
 c.downloads.remove_finished = 1
