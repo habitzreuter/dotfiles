@@ -11,10 +11,10 @@ case "$1" in
 	swaymsg exit
         ;;
     suspend)
-        swaylock -i $BG --scaling fill & systemctl suspend
+        swaylock -f -i $BG --scaling fill & systemctl suspend
         ;;
     hibernate)
-        swaylock -i $BG --scaling fill & systemctl hibernate
+        swaylock -f -i $BG --scaling fill & systemctl hibernate
         ;;
     reboot)
         systemctl reboot
