@@ -12,6 +12,10 @@ config.bind("xjf", "set content.javascript.enabled false")
 config.bind('<z><l>', 'spawn --userscript qute-pass -d dmenu')
 config.bind('<z><b>', 'spawn --userscript getbib')
 
+# view videos in mpv
+config.bind(',m', 'spawn mpv {url}')
+config.bind(',M', 'hint links spawn mpv {hint-url}')
+
 # download settings
 c.downloads.remove_finished = 1
 c.downloads.location.directory = '~/Downloads/'
