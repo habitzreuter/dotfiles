@@ -4,6 +4,7 @@ servercmd = /home/habitzreuter/.local/bin/unison
 
 path = ufrgs
 path = docs
+path = certificados
 
 times = true
 log = false
