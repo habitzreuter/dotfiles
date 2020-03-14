@@ -1,1 +1,1 @@
-feh --scale-down --auto-zoom --image-bg black
+feh --scale-down --auto-zoom --image-bg black --draw-filename
