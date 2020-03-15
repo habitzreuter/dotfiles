@@ -11,7 +11,8 @@ set colorcolumn=81
 set nowrap
 set number
 set relativenumber
-set spell spelllang=en_us
+
+set spell spelllang=en_us,pt_br,de_de
 
 " UltiSnips trigger configuration
 let g:UltiSnipsExpandTrigger="<tab>"
