@@ -14,3 +14,7 @@ end
 function fish_user_key_bindings
 	fzf_key_bindings
 end
+
+if test (tty) = /dev/tty1
+	eval sway
+end
