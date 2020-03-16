@@ -1,0 +1,72 @@
+snippet template "LaTeX Boilerplate" b
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{hyperref}
+\usepackage{indentfirst}
+
+\begin{document}
+	$0
+\end{document}
+endsnippet
+
+snippet func "Define function"
+$1 : $2 \rightarrow $3
+endsnippet
+
+snippet inv "Inverse operation" A
+^{-1}
+endsnippet
+
+snippet => "Implies" A
+\implies
+endsnippet
+
+snippet iff "If and only if" A
+\iff
+endsnippet
+
+snippet <= "Less or equal than" A
+\le 
+endsnippet
+
+snippet >= "Greater or equal than" A
+\ge 
+endsnippet
+
+snippet OO "Empty set" A
+\\varnothing
+endsnippet
+
+snippet NN "Set of Natural numbers" A
+\\mathbb{N} 
+endsnippet
+snippet ZZ "Set of Integer numbers" A
+\\mathbb{Z} 
+endsnippet
+
+snippet QQ "Set of Rational numbers" A
+\\mathbb{Q} 
+endsnippet
+
+snippet RR "Set of Real numbers" A
+\\mathbb{R} 
+endsnippet
+
+snippet CC "Set of Complex numbers" A
+\\mathbb{C} 
+endsnippet
+
+snippet partial "Partial derivative"
+\frac{\partial ${1:f}}{\partial ${2:x}} $0
+endsnippet
+
+snippet ooo "Inifinity" A
+\infty
+endsnippet
+
+# vim:ft=snippets
