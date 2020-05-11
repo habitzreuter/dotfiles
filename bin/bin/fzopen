@@ -2,6 +2,7 @@
 #
 # Search files with fzf and open them using rifle (ranger dependency)
 
-file=$HOME/$(fd --follow --type file | fzf)
+cd $HOME
+file=$(fd --follow --full-path --type file | fzf)
 
 rifle "$file"
