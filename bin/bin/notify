@@ -1,0 +1,8 @@
+#!/bin/bash
+
+source ~/.config/secrets/tg
+   
+curl -X POST \
+   -H 'Content-Type: application/json' \
+   -d '{"chat_id": '"$CHAT_ID"', "text": "'"$1"'"}' \
+   https://api.telegram.org/bot$TOKEN/sendMessage
