@@ -1,14 +1,8 @@
-root = /home/habitzreuter/box/
-root = ssh://habitzreuter@lief.if.ufrgs.br///home/habitzreuter/
-servercmd = /home/habitzreuter/.local/bin/unison
-
-path = ufrgs
-path = docs
-path = certificados
+root = /home/marco/sync/
+root = ssh://work///home/marco/sync/
 
 times = true
 log = false
-prefer = newer
 ui = text
 auto = true
 sshargs = -C
@@ -26,4 +20,3 @@ ignore = Name *.tmp
 ignore = Name *.aux
 ignore = Name *.log
 ignore = Name .*.swp
-ignore = Name .Trash-1000
