@@ -1,2 +1,4 @@
 xournal/.config/xournalpp/colornames.ini
 xournal/.config/xournalpp/settings.xml
+xournal/.config/xournalpp/metadata/*
+fish/.config/fish/fish_variables
