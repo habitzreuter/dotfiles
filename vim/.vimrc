@@ -12,13 +12,6 @@ set nowrap
 set number
 set relativenumber
 
-set spell spelllang=en_us,pt_br,de_de
-
-" UltiSnips trigger configuration
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
 " Show trailing spaces
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
