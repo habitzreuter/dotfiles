@@ -20,7 +20,7 @@ if [ -f "$1" ]; then
         *.zip)      unzip "$1"                            ;;
         *.pax)      cat "$1" | pax -r                     ;;
         *.pax.z)    uncompress "$1" --stdout | pax -r     ;;
-        *.rar)      7z x "$1"                             ;;
+        *.rar)      unrar x "$1"                          ;;
         *.z)        uncompress "$1"                       ;;
         *.7z)       7z x "$1"                             ;;
         *)          echo "'$1' cannot be extracted/mounted via extract()" ;;
