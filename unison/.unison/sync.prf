@@ -3,7 +3,6 @@ root = ssh://work///home/marco/sync/
 
 times = true
 log = false
-ui = text
 auto = true
 sshargs = -C
 
