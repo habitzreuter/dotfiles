@@ -3,7 +3,7 @@
 # Search files with fzf and open them using rifle (ranger dependency)
 
 cd $HOME
-EXTENSIONS="--extension pdf --extension djvu --extension txt --extension md --extension png"
+EXTENSIONS="--extension pdf --extension djvu --extension txt --extension md --extension png --extension jpg --extension jpeg"
 file=$(fdfind --follow --full-path --type file $EXTENSIONS --exclude "**/results/**"| fzf)
 
 rifle "$file"
