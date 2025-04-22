@@ -19,4 +19,10 @@
       "env": {}
     },
   ],
+  "telemetry.telemetryLevel": "off",
+  "telemetry.feedback.enabled": false,
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "markdown.copyFiles.destination": {
+    "*": ".attachments/${unixTime}-${fileName}"
+  },
 }
