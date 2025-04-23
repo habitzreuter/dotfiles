@@ -25,4 +25,7 @@
   "markdown.copyFiles.destination": {
     "*": ".attachments/${unixTime}-${fileName}"
   },
+  "C_Cpp.default.includePath": [
+    "/opt/intel/oneapi/mkl/latest/include/*"
+  ],
 }
